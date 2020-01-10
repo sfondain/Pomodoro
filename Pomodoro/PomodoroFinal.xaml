@@ -1,0 +1,13 @@
+﻿<Window x:Class="Pomodoro.PomodoroFinal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pomodoro"
+        mc:Ignorable="d"
+        Title="PomodoroFinal" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="tbTime" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="251" Width="528" Margin="165,90,0,0"/>
+
+    </Grid>
+</Window>
