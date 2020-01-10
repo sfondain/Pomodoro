@@ -34,7 +34,9 @@ namespace Pomodoro
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            PomodoroFinal pomodoroFinal = new PomodoroFinal();
+            pomodoroFinal.Show();
+            this.Close();
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -12,8 +12,8 @@
         <Label Content="Nouvelle tâche" HorizontalAlignment="Left" Margin="339,84,0,0" VerticalAlignment="Top" Width="100"/>
         <Label Content="Nom tâche :" HorizontalAlignment="Left" Margin="234,134,0,0" VerticalAlignment="Top" Width="76"/>
         <Label Content="Nombre de pomodoro :" HorizontalAlignment="Left" Margin="172,182,0,0" VerticalAlignment="Top" Width="138"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="319,138,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="319,186,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="319,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="319,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Ajouter une tâche" HorizontalAlignment="Left" Margin="319,236,0,0" VerticalAlignment="Top" Width="158" Height="52" Click="Button_Click"/>
         <Button Content="Commencer" HorizontalAlignment="Left" Margin="319,322,0,0" VerticalAlignment="Top" Width="158" Height="52" Click="Button_Click"/>
         <ListView HorizontalAlignment="Left" Height="297" Margin="537,84,0,0" VerticalAlignment="Top" Width="204" SelectionChanged="ListView_SelectionChanged">
