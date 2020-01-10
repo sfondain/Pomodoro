@@ -10,7 +10,7 @@
         <Label Content="WorkTime" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="369,88,0,308" Width="64" Height="24">
 
         </Label>
-        <Button Content="Commencer à travailler" HorizontalAlignment="Left" Margin="307,144,0,0" VerticalAlignment="Top" Width="194" Height="55"/>
+        <Button Content="Commencer à travailler" HorizontalAlignment="Left" Margin="307,144,0,0" VerticalAlignment="Top" Width="194" Height="55" Click="Button_Click"/>
         <Button Content="Historique" HorizontalAlignment="Left" Margin="307,238,0,0" VerticalAlignment="Top" Width="194" Height="55"/>
 
     </Grid>

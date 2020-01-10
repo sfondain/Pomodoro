@@ -10,26 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Pomodoro
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour Pomodoro.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Pomodoro : Window
     {
-        public MainWindow()
+        public Pomodoro()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            TagChoice tagWindow = new TagChoice();
-            tagWindow.Show();
-            this.Close();
         }
     }
 }

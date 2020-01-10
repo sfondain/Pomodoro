@@ -18,17 +18,17 @@ namespace Pomodoro
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TagChoice : Window
     {
-        public MainWindow()
+        public TagChoice()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            TagChoice tagWindow = new TagChoice();
-            tagWindow.Show();
+            MainWindow accueilWindow = new MainWindow();
+            accueilWindow.Show();
             this.Close();
         }
     }
