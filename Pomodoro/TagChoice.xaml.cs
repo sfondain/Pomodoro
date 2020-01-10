@@ -34,14 +34,15 @@ namespace Pomodoro
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PomodoroFinal pomodoroFinal = new PomodoroFinal();
-            pomodoroFinal.Show();
-            this.Close();
+            var taskName = taskNameInput.Text;
+            var nbPomodoro = int.Parse(nbPomodoroInput.Text);
+            Task task = new Task(taskName, nbPomodoro);
+            taskList.Items.Add(task.name);
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
