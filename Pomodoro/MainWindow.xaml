@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="WorkTime" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="369,88,0,308" Width="64" Height="24">
+
+        </Label>
+        <Button Content="Commencer à travailler" HorizontalAlignment="Left" Margin="307,144,0,0" VerticalAlignment="Top" Width="194" Height="55"/>
+        <Button Content="Historique" HorizontalAlignment="Left" Margin="307,238,0,0" VerticalAlignment="Top" Width="194" Height="55"/>
+
     </Grid>
 </Window>
