@@ -8,6 +8,7 @@
         Title="TagChoice" Height="450" Width="800">
     <Grid>
         <Button Content="Accueil" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="74" Height="33" Click="Button_Click_1"/>
+        <StackPanel HorizontalAlignment="Left" Height="206" Margin="132,54,0,0" VerticalAlignment="Top" Width="268"/>
 
     </Grid>
 </Window>
