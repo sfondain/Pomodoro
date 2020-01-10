@@ -20,6 +20,8 @@ namespace Pomodoro
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Task> tasksList = new List<Task>();
+
         public MainWindow()
         {
             InitializeComponent();
