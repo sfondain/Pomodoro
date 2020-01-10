@@ -8,6 +8,22 @@
         Title="TagChoice" Height="450" Width="800">
     <Grid>
         <Button Content="Accueil" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="74" Height="33" Click="Button_Click_1"/>
+        <Label Content="Pomodoro" HorizontalAlignment="Left" Margin="357,14,0,0" VerticalAlignment="Top" Height="29" Width="68"/>
+        <Label Content="Nouvelle tâche" HorizontalAlignment="Left" Margin="339,84,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Nom tâche :" HorizontalAlignment="Left" Margin="234,134,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Nombre de pomodoro :" HorizontalAlignment="Left" Margin="172,182,0,0" VerticalAlignment="Top" Width="138"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="319,138,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="319,186,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Ajouter une tâche" HorizontalAlignment="Left" Margin="319,236,0,0" VerticalAlignment="Top" Width="158" Height="52" Click="Button_Click"/>
+        <Button Content="Commencer" HorizontalAlignment="Left" Margin="319,322,0,0" VerticalAlignment="Top" Width="158" Height="52" Click="Button_Click"/>
+        <ListView HorizontalAlignment="Left" Height="297" Margin="537,84,0,0" VerticalAlignment="Top" Width="204" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Liste des tâches enregistrées" HorizontalAlignment="Left" Margin="560,53,0,0" VerticalAlignment="Top" Width="159"/>
 
     </Grid>
 </Window>
