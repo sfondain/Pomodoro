@@ -72,5 +72,14 @@ namespace Pomodoro
             pomodoroFinal.Show();
             this.Close();
         }
+
+        private void nbPomodoroInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(nbPomodoroInput.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Veuillez entrer seulement des nombres");
+                nbPomodoroInput.Text = nbPomodoroInput.Text.Remove(nbPomodoroInput.Text.Length - 1);
+            }
+        }
     }
 }
