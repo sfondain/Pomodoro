@@ -40,7 +40,7 @@ namespace Pomodoro
             {
                 if (!pause)
                 {
-                    _time = TimeSpan.FromSeconds(5);
+                    _time = TimeSpan.FromSeconds(1500);
                     labelTitre.Content = listTaskName[nbPomodorosDone];
                     _timer = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
                 {
