@@ -9,14 +9,14 @@
     <Grid>
         <Button Content="Accueil" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="74" Height="33" Click="Button_Click_1"/>
         <Label Content="Pomodoro" HorizontalAlignment="Left" Margin="357,14,0,0" VerticalAlignment="Top" Height="29" Width="68"/>
-        <Label Content="Nouvelle tâche" HorizontalAlignment="Left" Margin="339,84,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label HorizontalContentAlignment="Center" Name="labelTache" Content="Nouvelle tâche" HorizontalAlignment="Left" Margin="319,84,0,0" VerticalAlignment="Top" Width="158"/>
         <Label Content="Nom tâche :" HorizontalAlignment="Left" Margin="234,134,0,0" VerticalAlignment="Top" Width="76"/>
         <Label Content="Nombre de pomodoro :" HorizontalAlignment="Left" Margin="172,182,0,0" VerticalAlignment="Top" Width="138"/>
         <TextBox x:Name="taskNameInput" HorizontalAlignment="Left" Height="23" Margin="319,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
         <TextBox x:Name="nbPomodoroInput" HorizontalAlignment="Left" Height="23" Margin="319,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
         <Button x:Name="addTaskButton" Content="Ajouter une tâche" HorizontalAlignment="Left" Margin="319,236,0,0" VerticalAlignment="Top" Width="158" Height="52" Click="Button_Click"/>
-        <Button x:Name="beginButton" Content="Commencer" HorizontalAlignment="Left" Margin="319,322,0,0" VerticalAlignment="Top" Width="158" Height="52" Click="Button_Click_1"/>
-        <ListView x:Name="taskList" HorizontalAlignment="Left" Height="297" Margin="537,84,0,0" VerticalAlignment="Top" Width="204" SelectionChanged="ListView_SelectionChanged">
+        <Button x:Name="beginButton" Content="Commencer" HorizontalAlignment="Left" Margin="319,322,0,0" VerticalAlignment="Top" Width="158" Height="52" Click="beginButton_Click"/>
+        <ListView x:Name="taskList" HorizontalAlignment="Left" Height="297" Margin="537,84,0,0" VerticalAlignment="Top" Width="204" MouseDoubleClick="taskList_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>

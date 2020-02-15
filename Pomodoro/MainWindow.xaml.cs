@@ -20,7 +20,7 @@ namespace Pomodoro
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Task> tasksList = new List<Task>();
+        public static Dictionary<string, Task> tasksList = new Dictionary<string, Task>();
 
         public MainWindow()
         {

@@ -19,7 +19,8 @@ namespace Pomodoro
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
     public partial class TagChoice : Window
-    {
+    {     
+
         public TagChoice()
         {
             InitializeComponent();
@@ -36,18 +37,40 @@ namespace Pomodoro
         {
             var taskName = taskNameInput.Text;
             var nbPomodoro = int.Parse(nbPomodoroInput.Text);
-            Task task = new Task(taskName, nbPomodoro);
-            taskList.Items.Add(task.name);
+            Task task = new Task(taskName, nbPomodoro);            
+            if (MainWindow.tasksList.ContainsKey(taskName))
+            {
+                MainWindow.tasksList[taskName].nbPomodoro = task.nbPomodoro;
+            }
+            else
+            {
+                MainWindow.tasksList.Add(taskName, task);
+                taskList.Items.Add(task.name);
+            }
+            taskNameInput.Text = "";
+            nbPomodoroInput.Text = "";
+            labelTache.Content = "Nouvelle tâche";
+            addTaskButton.Content = "Ajouter une tâche";
+            taskNameInput.IsEnabled = true;
+        }
+        private void taskList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            labelTache.Content = "Modification d'une tâche";
+            if(taskList.SelectedItems.Count == 1)
+            {
+                taskNameInput.Text = MainWindow.tasksList[taskList.SelectedItem.ToString()].name;
+                taskNameInput.IsEnabled = false;
+                nbPomodoroInput.Text = MainWindow.tasksList[taskList.SelectedItem.ToString()].nbPomodoro.ToString();                
+            }
+            addTaskButton.Content = "Modifier";
         }
 
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void beginButton_Click(object sender, RoutedEventArgs e)
         {
-            
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            PomodoroFinal pomodoroFinal = new PomodoroFinal();
+            MainWindow mw = new MainWindow();
+            pomodoroFinal.Show();
+            this.Close();
         }
     }
 }
