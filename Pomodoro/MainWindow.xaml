@@ -11,7 +11,7 @@
 
         </Label>
         <Button Content="Commencer à travailler" HorizontalAlignment="Left" Margin="307,144,0,0" VerticalAlignment="Top" Width="194" Height="55" Click="Button_Click"/>
-        <Button Content="Historique" HorizontalAlignment="Left" Margin="307,238,0,0" VerticalAlignment="Top" Width="194" Height="55"/>
+        <Button Content="Historique" HorizontalAlignment="Left" Margin="307,238,0,0" VerticalAlignment="Top" Width="194" Height="55" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

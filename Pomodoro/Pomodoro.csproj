@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Historic.xaml.cs">
+      <DependentUpon>Historic.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PomodoroFinal.xaml.cs">
       <DependentUpon>PomodoroFinal.xaml</DependentUpon>
     </Compile>
@@ -62,6 +65,10 @@
       <DependentUpon>TagChoice.xaml</DependentUpon>
     </Compile>
     <Compile Include="Task.cs" />
+    <Page Include="Historic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
